@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+body {
+  background: url('img/cloudy.jpg');
+  width: 100%;
+  min-height: 28rem;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input {
+  border-radius: 20px;
+  padding: 6px 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.long {
+  margin-top: 22px;
+  margin-bottom: 22px;
+  margin-left: 430px;
+  margin-right: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.lat {
+  margin-top: 22px;
+  margin-bottom: 22px;
+  margin-right: 15px;
+}
+
+.location {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  border-radius: 15px;
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.img-container {
+  margin: auto;
+  text-align: left;
+  width: 60%;
+  height: 390px;
+  border-radius: 20px;
+  box-shadow: 6px 6px 30px 0px grey;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.current-weather {
+  font-size: 20px;
+  margin-top: 50px;
+  margin-left: 400px;
+}
+
+.next-days-container {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: row;
+  position: absolute;
+  top: 405px;
+  left: 295px;
+}
+
+.next-days {
+  width: 130px;
+  height: 140px;
+  margin: 32px;
+  border-radius: 30px;
+  box-shadow: 6px 6px 30px 0px grey;
+  
 }
